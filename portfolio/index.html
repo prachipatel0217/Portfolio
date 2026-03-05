@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prachi Patel — Full Stack Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>emailjs.init('YOUR_PUBLIC_KEY');</script>
+</head>
+<body>
+
+<!-- Cursor -->
+<div id="dot"></div>
+<div id="ring"></div>
+
+<!-- ─────────────────────────────────
+   NAVBAR
+───────────────────────────────────── -->
+<nav id="nav">
+  <div class="n-logo">Prachi<span>.</span></div>
+  <ul class="n-links" id="navLinks">
+    <li><a href="#home" class="act">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#expertise">Expertise</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="n-hire">Hire Me</a>
+  <button class="hbtn" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ═══════════════════════════════════
+     SECTION 1 — HOME
+═══════════════════════════════════ -->
+<section id="home">
+  <div class="home-grid">
+
+    <!-- LEFT -->
+    <div>
+      <div class="home-badge">
+        <span class="badge-dot"></span>
+        Available for opportunities
+      </div>
+
+      <h1 class="home-h">
+        Hi, I'm
+        <em>Prachi Patel</em>
+      </h1>
+
+      <p class="home-role">
+        <span class="cursor-type" id="typer"></span>
+      </p>
+
+      <p class="home-desc">
+        I build <strong>responsive, user-focused</strong> web applications — blending clean code with purposeful design to create experiences that truly matter.
+      </p>
+
+      <div class="home-btns">
+        <a href="#projects" class="btn btn-p"><i class="fas fa-rocket"></i> View My Work</a>
+        <a href="#contact" class="btn btn-s"><i class="fas fa-paper-plane"></i> Contact Me</a>
+      </div>
+
+      <div class="home-stats">
+        <div>
+          <div class="hs-n">10+</div>
+          <div class="hs-l">Projects Done</div>
+        </div>
+        <div class="hs-div"></div>
+        <div>
+          <div class="hs-n">5+</div>
+          <div class="hs-l">Technologies</div>
+        </div>
+        <div class="hs-div"></div>
+        <div>
+          <div class="hs-n">2+</div>
+          <div class="hs-l">Years Learning</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT PHOTO -->
+    <div class="home-photo">
+      <div class="photo-glow"></div>
+      <div class="photo-frame">
+        <div class="orbit orbit-1"></div>
+        <div class="orbit orbit-2"></div>
+        <div class="photo-shape">
+          <img src="Prachi Patel.jpeg" alt="Prachi Patel">
+        </div>
+        <div class="photo-info">
+          <span class="pi-n">2+</span>
+          <span class="pi-l">Years Experience</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="scroll-hint">
+    <div class="s-line"></div>
+    <div class="s-dot"></div>
+    scroll to explore
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<!-- ═══════════════════════════════════
+     SECTION 2 — ABOUT
+═══════════════════════════════════ -->
+<section id="about">
+  <div class="container">
+
+    <!-- Header -->
+    <div class="reveal">
+      <div class="tag">About Me</div>
+    </div>
+
+    <div class="about-grid">
+
+      <!-- Photo -->
+      <div class="ab-img-wrap reveal left">
+        <div class="ab-img">
+          <img src="Prachi Patel.jpeg" alt="Prachi Patel">
+        </div>
+        <div class="ab-card">
+          <span class="ab-card-n">2+</span>
+          <span class="ab-card-l">Years Experience</span>
+        </div>
+      </div>
+
+      <!-- Text -->
+      <div class="ab-text reveal right">
+        <div class="tag" style="margin-top:.5rem">Who I Am</div>
+        <h2 class="title">Passionate developer,<br><i>creative thinker</i></h2>
+        <p>Hi! I'm <strong>Prachi Patel</strong> — a Full Stack Developer based in Ahmedabad, India. I love turning complex problems into simple, beautiful, intuitive digital solutions.</p>
+        <p>I believe great software isn't just functional — it should be <strong>a joy to use</strong>. Whether it's a sleek frontend or a robust backend, I bring equal care and attention to every layer of the stack.</p>
+        <div class="ab-pills">
+          <span class="pill">Full Stack Dev</span>
+          <span class="pill">Python Lover</span>
+          <span class="pill">Lifelong Learner</span>
+          <span class="pill">Ahmedabad, India</span>
+        </div>
+        <div style="display:flex;gap:.8rem;flex-wrap:wrap">
+          <a href="#projects" class="btn btn-p btn-sm">See My Work</a>
+          <a href="#contact" class="btn btn-s btn-sm">Let's Talk</a>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Timeline -->
+    <div class="timeline-section">
+      <div class="tl-title-row reveal">
+        <div class="tag" style="justify-content:center">My Journey</div>
+        <h2 class="title">Where I've Been</h2>
+      </div>
+      <div class="tl" id="tl">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-yr">2026 — Present</div>
+          <div class="tl-name">Full Stack Projects &amp; Freelance</div>
+          <div class="tl-org">Building web applications for clients &amp; personal portfolio</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-yr">2023 — 2026</div>
+          <div class="tl-name">Bachelor's Degree in Computer Applications</div>
+          <div class="tl-org">Sardar Vallabhbhai Global University, Ahmedabad</div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-yr">2023</div>
+          <div class="tl-name">First Line of Code</div>
+          <div class="tl-org">The adventure begins — Hello, World! 🌍</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-row">
+      <div class="stat-box card reveal">
+        <div class="stat-n" data-t="10">0</div>
+        <div class="stat-l">Projects Completed</div>
+      </div>
+      <div class="stat-box card reveal">
+        <div class="stat-n" data-t="5">0</div>
+        <div class="stat-l">Technologies</div>
+      </div>
+      <div class="stat-box card reveal">
+        <div class="stat-n" data-t="100">0</div>
+        <div class="stat-l">% Dedication</div>
+      </div>
+      <div class="stat-box card reveal">
+        <div class="stat-n" data-t="2">0</div>
+        <div class="stat-l">Years Experience</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<!-- ═══════════════════════════════════
+     SECTION 3 — EXPERTISE
+═══════════════════════════════════ -->
+<section id="expertise">
+  <div class="container">
+
+    <div class="exp-intro reveal">
+      <div class="tag">What I Know</div>
+      <h2 class="title">Skills &amp; <i>Expertise</i></h2>
+      <p class="sub">Technologies I use to build polished, performant products — from pixel to production.</p>
+    </div>
+
+    <!-- Frontend -->
+    <div class="sk-group reveal">
+      <div class="cat-head">
+        <div class="cat-pill"><span class="cat-pill-dot"></span> Frontend Development</div>
+        <div class="cat-line"></div>
+      </div>
+      <div class="sk-grid">
+        <div class="sk-c"><div class="sk-badge">H5</div><div class="sk-body"><div class="sk-row"><span class="sk-nm">HTML5</span><span class="sk-pc">92%</span></div><div class="sk-track"><div class="sk-bar" data-w="92"></div></div></div></div>
+        <div class="sk-c"><div class="sk-badge">CSS</div><div class="sk-body"><div class="sk-row"><span class="sk-nm">CSS3</span><span class="sk-pc">88%</span></div><div class="sk-track"><div class="sk-bar" data-w="88"></div></div></div></div>
+        <div class="sk-c"><div class="sk-badge">TW</div><div class="sk-body"><div class="sk-row"><span class="sk-nm">Tailwind CSS</span><span class="sk-pc">85%</span></div><div class="sk-track"><div class="sk-bar" data-w="85"></div></div></div></div>
+        <div class="sk-c"><div class="sk-badge">JS</div><div class="sk-body"><div class="sk-row"><span class="sk-nm">JavaScript</span><span class="sk-pc">82%</span></div><div class="sk-track"><div class="sk-bar" data-w="82"></div></div></div></div>
+      </div>
+    </div>
+
+    <!-- Backend -->
+    <div class="sk-group reveal">
+      <div class="cat-head">
+        <div class="cat-pill"><span class="cat-pill-dot"></span> Backend Development</div>
+        <div class="cat-line"></div>
+      </div>
+      <div class="sk-grid">
+        <div class="sk-c"><div class="sk-badge">Py</div><div class="sk-body"><div class="sk-row"><span class="sk-nm">Python</span><span class="sk-pc">88%</span></div><div class="sk-track"><div class="sk-bar" data-w="88"></div></div></div></div>
+        <div class="sk-c"><div class="sk-badge">Dj</div><div class="sk-body"><div class="sk-row"><span class="sk-nm">Django</span><span class="sk-pc">80%</span></div><div class="sk-track"><div class="sk-bar" data-w="80"></div></div></div></div>
+        <div class="sk-c"><div class="sk-badge">Nd</div><div class="sk-body"><div class="sk-row"><span class="sk-nm">Node.js</span><span class="sk-pc">70%</span></div><div class="sk-track"><div class="sk-bar" data-w="70"></div></div></div></div>
+      </div>
+    </div>
+
+    <!-- Database -->
+    <div class="sk-group reveal">
+      <div class="cat-head">
+        <div class="cat-pill"><span class="cat-pill-dot"></span> Database</div>
+        <div class="cat-line"></div>
+      </div>
+      <div class="sk-grid">
+        <div class="sk-c"><div class="sk-badge">My</div><div class="sk-body"><div class="sk-row"><span class="sk-nm">MySQL</span><span class="sk-pc">80%</span></div><div class="sk-track"><div class="sk-bar" data-w="80"></div></div></div></div>
+        <div class="sk-c"><div class="sk-badge">SL</div><div class="sk-body"><div class="sk-row"><span class="sk-nm">SQLite</span><span class="sk-pc">85%</span></div><div class="sk-track"><div class="sk-bar" data-w="85"></div></div></div></div>
+        <div class="sk-c"><div class="sk-badge">Mg</div><div class="sk-body"><div class="sk-row"><span class="sk-nm">MongoDB</span><span class="sk-pc">65%</span></div><div class="sk-track"><div class="sk-bar" data-w="65"></div></div></div></div>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="sk-group reveal">
+      <div class="cat-head">
+        <div class="cat-pill"><span class="cat-pill-dot"></span> Tools &amp; Workflow</div>
+        <div class="cat-line"></div>
+      </div>
+      <div class="sk-grid">
+        <div class="sk-c"><div class="sk-badge">Git</div><div class="sk-body"><div class="sk-row"><span class="sk-nm">Git &amp; GitHub</span><span class="sk-pc">88%</span></div><div class="sk-track"><div class="sk-bar" data-w="88"></div></div></div></div>
+        <div class="sk-c"><div class="sk-badge">VS</div><div class="sk-body"><div class="sk-row"><span class="sk-nm">VS Code</span><span class="sk-pc">95%</span></div><div class="sk-track"><div class="sk-bar" data-w="95"></div></div></div></div>
+        <div class="sk-c"><div class="sk-badge">Fg</div><div class="sk-body"><div class="sk-row"><span class="sk-nm">Figma</span><span class="sk-pc">72%</span></div><div class="sk-track"><div class="sk-bar" data-w="72"></div></div></div></div>
+      </div>
+    </div>
+
+    <!-- Strengths -->
+    <div class="str-row">
+      <div class="str-card card reveal">
+        <div class="str-badge">Perf</div>
+        <h4>Performance Optimization</h4>
+        <p>Fast, efficient apps that score high on every benchmark.</p>
+      </div>
+      <div class="str-card card reveal">
+        <div class="str-badge">Sec</div>
+        <h4>Secure Architecture</h4>
+        <p>Security-first practices baked into every layer from day one.</p>
+      </div>
+      <div class="str-card card reveal">
+        <div class="str-badge">UX</div>
+        <h4>Responsive UI/UX</h4>
+        <p>Pixel-perfect interfaces that delight on every screen and device.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<!-- ═══════════════════════════════════
+     SECTION 4 — PROJECTS
+═══════════════════════════════════ -->
+<section id="projects">
+  <div class="container">
+
+    <div class="reveal">
+      <div class="tag">My Work</div>
+      <h2 class="title">Featured <i>Projects</i></h2>
+      <p class="sub">A curated selection of work — built with care, curiosity, and clean code.</p>
+    </div>
+
+    <div style="margin-top:3rem">
+      <div class="fbar reveal">
+        <button class="ft on" onclick="fp('all',this)">All</button>
+        <button class="ft" onclick="fp('web',this)">Web</button>
+        <button class="ft" onclick="fp('ml',this)">ML / AI</button>
+        <button class="ft" onclick="fp('design',this)">Design</button>
+        <button class="ft" onclick="fp('backend',this)">Backend</button>
+      </div>
+      <div class="p-grid" id="pg"></div>
+    </div>
+
+  </div>
+
+  <!-- Modal -->
+  <div class="m-veil" id="mv">
+    <div class="m-box">
+      <button class="m-close" onclick="cm()"><i class="fas fa-times"></i></button>
+      <div class="m-cover" id="mc"></div>
+      <h2 id="mt"></h2>
+      <p id="md"></p>
+      <div class="tags" id="mch" style="margin-bottom:1.4rem"></div>
+      <div class="m-acts">
+        <a id="mdm" href="#" class="btn btn-p btn-sm" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<!-- ═══════════════════════════════════
+     SECTION 5 — CONTACT
+═══════════════════════════════════ -->
+<section id="contact">
+  <div class="container">
+
+    <div class="reveal">
+      <div class="tag">Get In Touch</div>
+      <h2 class="title">Let's <i>Connect</i></h2>
+      <p class="sub">Open to new projects, collaborations, and conversations. I'd love to hear from you!</p>
+    </div>
+
+    <div class="c-grid" style="margin-top:3rem">
+
+      <!-- Left -->
+      <div class="c-left reveal">
+        <h2>Reach Me</h2>
+        <p>Whether you have a project idea, want to collaborate, or just want to say hi — my inbox is always open and I'll reply within a day.</p>
+        <div class="soc-list">
+          <a class="soc" href="https://wa.me/919898730192" target="_blank">
+            <div class="soc-icon" style="background:rgba(37,211,102,.1);color:#25d366"><i class="fab fa-whatsapp"></i></div>
+            <div class="soc-meta"><small>Quick chat</small><span>WhatsApp · +91 98987 30192</span></div>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a class="soc" href="https://linkedin.com/in/prachi-patel-9b2501372" target="_blank">
+            <div class="soc-icon" style="background:rgba(0,119,181,.1);color:#0077b5"><i class="fab fa-linkedin-in"></i></div>
+            <div class="soc-meta"><small>Professional network</small><span>LinkedIn · prachi-patel-9b2501372</span></div>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a class="soc" href="https://github.com/prachipatel0217" target="_blank">
+            <div class="soc-icon" style="background:rgba(255,255,255,.06);color:#fff"><i class="fab fa-github"></i></div>
+            <div class="soc-meta"><small>Open source work</small><span>GitHub · prachipatel0217</span></div>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a class="soc" href="https://mail.google.com/mail/?view=cm&to=patelprachi0217@gmail.com" target="_blank">
+            <div class="soc-icon" style="background:rgba(224,85,119,.1);color:var(--rose)"><i class="fas fa-envelope"></i></div>
+            <div class="soc-meta"><small>Formal inquiries</small><span><span class="__cf_email__" data-cfemail="7d0d1c0918110d0f1c1e15144d4f4c4a3d1a101c1411531e1210">[email&#160;protected]</span></span></div>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="c-loc"><i class="fas fa-map-marker-alt"></i> Ahmedabad, India · Available remotely worldwide</div>
+      </div>
+
+      <!-- Form -->
+      <div class="c-form reveal">
+        <div id="fw">
+          <h3>Send a Message</h3>
+          <div class="fg"><input type="text" id="fN" placeholder="x"><label>Full Name</label><div class="fg-err">Please enter your name</div></div>
+          <div class="fg"><input type="email" id="fE" placeholder="x"><label>Email Address</label><div class="fg-err">Please enter a valid email</div></div>
+          <div class="fg"><input type="text" id="fS" placeholder="x"><label>Subject</label><div class="fg-err">Please enter a subject</div></div>
+          <div class="fg"><textarea id="fM" placeholder="x"></textarea><label>Message</label><div class="fg-err">Please write your message</div></div>
+          <button class="btn btn-p" style="width:100%;justify-content:center" onclick="sf()">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </div>
+        <div class="f-ok" id="fok">
+          <span class="f-ico">🌸</span>
+          <h3>Message Sent!</h3>
+          <p>Thank you for reaching out. I'll get back to you within 24 hours!</p>
+          <button class="btn btn-s btn-sm" onclick="rf()">Send Another</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="rule"></div>
+
+<!-- ═══════════════════════════════════
+     SECTION 6 — THANK YOU
+═══════════════════════════════════ -->
+<section id="thankyou">
+  <div class="ty reveal">
+    <span class="ty-float">🌸</span>
+    <h1>Thank You for Visiting<br><em>My Portfolio</em></h1>
+    <p>I truly appreciate your time and interest in exploring my work. It was wonderful sharing my projects, skills, and journey with you. Always open to new conversations and opportunities!</p>
+    <div class="ty-btns">
+      <a href="#home" class="btn btn-p"><i class="fas fa-home"></i> Back to Top</a>
+      <a href="#contact" class="btn btn-s"><i class="fas fa-paper-plane"></i> Contact Me</a>
+    </div>
+    <div class="ty-sign">Designed &amp; Developed with passion · Prachi Patel</div>
+  </div>
+</section>
+
+<footer>Made with ♥ by <b>Prachi Patel</b> · Ahmedabad, India</footer>
+
+<!-- Terminal -->
+<button class="tb" onclick="toggleTerm()" title="Terminal"><i class="fas fa-terminal"></i></button>
+<div class="tw" id="tw">
+  <div class="t-bar">
+    <div class="td td-r"></div><div class="td td-y"></div><div class="td td-g"></div>
+    <span class="t-bar-title">prachi@portfolio ~ bash</span>
+    <button class="t-bar-x" onclick="toggleTerm()"><i class="fas fa-times"></i></button>
+  </div>
+  <div class="t-body" id="tb2"></div>
+  <div class="t-inp-row">
+    <span class="t-prl">prachi:~$</span>
+    <input class="t-inp" id="ti" placeholder="type 'help'…" autocomplete="off" onkeydown="tk(event)">
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
